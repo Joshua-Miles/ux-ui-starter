@@ -28,16 +28,12 @@ html {
             }
 
             .log-in-button{
-                background-color: black;
-                color: white;
-                padding: 10px;
-                border-radius: 5px;
+              
             }
 
-            .log-in-button:hover{
-                background-color: white;
-                color: black;
-            }
+                .log-in-button:hover{
+                    
+                }
 
         .sign-up-form {
 
@@ -47,6 +43,9 @@ html {
 
             }
 
+                .sign-up-button:hover{
+                    
+                }
 
 
     .feed-view {
@@ -72,3 +71,7 @@ html {
             .create-post-button {
 
             }
+
+                .create-post-button:hover {
+
+                }
