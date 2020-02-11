@@ -1,10 +1,10 @@
 import React from 'react'
 
 const FeedView = props => (
-    <div>
-        <h1>Feed</h1>
+    <div className="feed-view">
+        <h1 className="feed-header">Feed</h1>
         {props.posts.map( post => (
-            <div>
+            <div className="post-card">
                 <h3>{post.content}</h3>
                 <p>-{(
                     post.user_id === props.currentUser.id 
@@ -13,12 +13,13 @@ const FeedView = props => (
                 )}</p>
             </div>
         ))}
-        <div>
+        <div className="new-post-form">
             <textarea 
+                className="new-post-content"
                 value={props.newPostContent} 
                 onChange={e => props.changeNewPostContent(e.target.value)}
             />
-            <button onClick={props.createPost}>Post</button>
+            <button className="create-post-button" onClick={props.createPost}>Post</button>
         </div>
     </div>
 )

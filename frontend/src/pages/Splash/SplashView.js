@@ -1,10 +1,10 @@
 import React from 'react'
 
 const SplashView = props => (
-    <div>
-        <div>
+    <div className="splash-view">
+        <div className="form login-form">
             <h1>Login</h1>
-            <div>
+            <div className="form-field">
                 <label>Username</label>
                 <input
                     type="text"
@@ -12,7 +12,7 @@ const SplashView = props => (
                     onChange={e => props.changeUsername(e.target.value)}
                 />
             </div>
-            <div>
+            <div className="form-field">
                 <label>Password</label>
                 <input
                     type="text"
@@ -20,27 +20,29 @@ const SplashView = props => (
                     onChange={e => props.changePassword(e.target.value)}
                 />
             </div>
-            <button onClick={() => props.login()}>Login</button>
+            <button className="log-in-button" onClick={() => props.login()}>Login</button>
         </div>
-        <div>
+        <div className="sign-up-form">
             <h1>Sign Up</h1>
-            <div>
-                <label>Username</label>
+            <div className="form-field">
+                <label className="form-label">Username</label>
                 <input
+                    className="form-input"
                     type="text"
                     value={props.newUsername}
                     onChange={e => props.changeNewUsername(e.target.value)}
                 />
             </div>
-            <div>
-                <label>Password</label>
+            <div className="form-field">
+                <label className="form-label">Password</label>
                 <input
+                    className="form-input"
                     type="text"
                     value={props.newPassword}
                     onChange={e => props.changeNewPassword(e.target.value)}
                 />
             </div>
-            <button onClick={() => props.signUp()}>Sign Up</button>
+            <button className="sign-up-button" onClick={() => props.signUp()}>Sign Up</button>
         </div>
     </div>
 )
