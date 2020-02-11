@@ -4,7 +4,7 @@ html {
 }
 
     .top-bar {
-
+       
     }
 
 
@@ -28,7 +28,15 @@ html {
             }
 
             .log-in-button{
+                background-color: black;
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
+            }
 
+            .log-in-button:hover{
+                background-color: white;
+                color: black;
             }
 
         .sign-up-form {
