@@ -20,7 +20,7 @@ const SplashController = ({ View }) => {
     }
 
     const signUp = () => {
-        socket.emit('signUp', { username, password }, user => {
+        socket.emit('signUp', { username: newUsername, password: newPassword }, user => {
             history.push('/feed')
         })
     }
